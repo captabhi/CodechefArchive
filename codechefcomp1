@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  long long int a,b,c,d,t,temp;
+   cina>>t;
+   while(t--)
+   {
+    cin>>a>>b>>c>>d;
+    if(b>a)
+    {
+      temp=a;
+      a=b;
+      b=temp;
+
+    }
+    if(d>c)
+    {
+     temp=c;
+     c=d;
+     d=temp;
+    }
+    temp=0;
+    for(int i=a;i<=b;i++ )
+    {
+     for(int j=c;j<=d;j++)
+     {
+      if(i<j)
+      temp++;
+      }
+      }
+
+    return 0;
+
+    }
+
+
+
+
+
+ }

@@ -1,0 +1,16 @@
+time=float(0)
+t=int(input())
+while(t>0):
+    n=float(input())
+    b=float(input())
+    m=float(input())
+    while(n!=1):
+        if(n%2==0):
+            time=time+(m*(n/2))+b
+        else:
+            time=time+(m*((n+1)/2))+b
+        t=t-1
+        n=n/2
+        m=m*2
+    time+=m
+    print(time)
